@@ -160,6 +160,7 @@ h4 {
 .hamburger {
   cursor: pointer;
   z-index: 101;
+  display: none;
 }
 
 .closeIcon {
@@ -461,6 +462,9 @@ textarea:focus {
 }
 
 @media screen and (max-width: 900px) {
+  .hamburger{
+    display: unset;
+  }
   .minigallery img,
   .gallery img {
     border-radius: 2rem;
@@ -477,7 +481,7 @@ textarea:focus {
     padding: 3rem;
     gap: 3rem;
   }
-  .desktop {
+  .desktopmenu{
     display: none;
   }
 }

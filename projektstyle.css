@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Hind Mysuru:700|Urbanist:400");
+
+/* Variables */
+:root {
+  /* colors */
+  --text: #f7f9fd;
+  --background: #000000;
+  --primary: #b99653;
+  --accent: #faf3e3;
+
+  /* Font sizes */
+
+  /* --size1: bold 4.21rem;
+  --size2: bold 3.158rem;
+  --size3: bold 2.369rem;
+  --size4: bold 1.777rem;
+  --size5: bold 1.333rem;
+  --p: 1rem var(--ff);
+  --small: 0.75rem var(--ff); */
+}
+body {
+  font-family: "Urbanist";
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Hind Mysuru";
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+/* Reset default margin for text elements */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+/* Global settings */
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  color: var(--text);
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100dvh;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--text);
+  font-size: 2rem;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+p {
+  font-size: 2rem;
+}
+
+/* Navigation bar */
+header {
+  display: flex;
+  padding: 2rem 6rem;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+/* Mobile Nav */
+.mobilenav {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  background-color: var(--background);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  font: var(--size3);
+  font-weight: 400;
+}
+
+.hamburger:hover {
+  color: var(--primary);
+}
+
+.hamburger {
+  cursor: pointer;
+  z-index: 101;
+  display: none;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.logo {
+  width: 11rem;
+  height: 4rem;
+  background: url("./img/logo.png") center/cover no-repeat;
+  flex-shrink: 0;
+}
+.menulinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.menulinks a {
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.herotext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 6rem 6rem 6rem;
+  flex: 1 0 0;
+  align-items: stretch;
+}
+
+/* Bio */
+
+.bio {
+  margin-top: 2rem;
+  display: flex;
+  gap: 4rem;
+}
+
+/* Footer */
+footer {
+  padding: 6rem;
+  display: flex;
+  gap: 6rem;
+}
+
+.contact {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr;
+  gap: 1rem;
+  flex: 1 0 0;
+}
+
+textarea {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 3;
+  resize: none;
+}
+
+.adress iframe {
+  display: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+input[type="submit"] {
+  border-radius: 1rem;
+  background: rgba(185, 150, 83, 0.15);
+  color: rgba(247, 249, 253, 0.5);
+  border: none;
+  padding: 1.5rem 2rem;
+}
+
+input[type="submit"] {
+  grid-column: 2;
+  place-self: end;
+  background-color: var(--primary);
+  color: var(--text);
+  aspect-ratio: 5/1;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+/* Media queries */
+@media screen and (max-width: 1250px) {
+  .bio {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  footer {
+    flex-direction: column;
+  }
+  p,
+  a,
+  label,
+  input {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+  .desktopmenu {
+    display: none;
+  }
+  .hamburger {
+    display: unset;
+  }
+  .herotext {
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact textarea {
+    height: 9.375rem;
+  }
+
+  input[type="submit"] {
+    aspect-ratio: unset;
+    width: 100%;
+  }
+}

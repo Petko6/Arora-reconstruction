@@ -11,9 +11,9 @@
 
 <body>
     <div class="hero">
-        <nav>
-            <a href="https://prochazkap.soskolin.eu/projekt/index.html" class="logo"></a>
-            <div class="menulinks">
+        <header class="desktop">
+            <div class="logo"></div>
+            <nav class="menulinks desktopmenu">
                 <a href="https://prochazkap.soskolin.eu/projekt/index.html#about">
                     <h5>O Nás</h5>
                 </a>
@@ -32,8 +32,52 @@
                 <a href="#contact">
                     <h5>Kontakt</h5>
                 </a>
+            </nav>
+            <!-- Mobilní ikona pro otevírání navigace -->
+            <div class="hamburger">
+                <!-- Ikona menu pro mobilní navigaci -->
+                <svg class="menuIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0,0,256,256" width="4rem"
+                    height="4rem" fill="currentColor" fill-rule="nonzero">
+                    <g transform="scale(3.55556,3.55556)">
+                        <path
+                            d="M56,48c2.209,0 4,1.791 4,4c0,2.209 -1.791,4 -4,4c-1.202,0 -38.798,0 -40,0c-2.209,0 -4,-1.791 -4,-4c0,-2.209 1.791,-4 4,-4c1.202,0 38.798,0 40,0zM56,32c2.209,0 4,1.791 4,4c0,2.209 -1.791,4 -4,4c-1.202,0 -38.798,0 -40,0c-2.209,0 -4,-1.791 -4,-4c0,-2.209 1.791,-4 4,-4c1.202,0 38.798,0 40,0zM56,16c2.209,0 4,1.791 4,4c0,2.209 -1.791,4 -4,4c-1.202,0 -38.798,0 -40,0c-2.209,0 -4,-1.791 -4,-4c0,-2.209 1.791,-4 4,-4c1.202,0 38.798,0 40,0z">
+                        </path>
+                    </g>
+                </svg>
+                <!-- Ikona zavření mobilní navigace -->
+                <svg class="closeIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0,0,256,256" width="64px"
+                    height="64px" fill-rule="nonzero" fill="white">
+                    <path
+                        d="M19,15c-1.023,0 -2.04812,0.39087 -2.82812,1.17188c-1.562,1.562 -1.562,4.09425 0,5.65625l14.17188,14.17188l-14.17187,14.17188c-1.562,1.562 -1.562,4.09425 0,5.65625c0.78,0.78 1.80513,1.17188 2.82813,1.17188c1.023,0 2.04812,-0.39088 2.82813,-1.17187l14.17188,-14.17187l14.17188,14.17188c1.56,1.562 4.09525,1.562 5.65625,0c1.563,-1.563 1.563,-4.09325 0,-5.65625l-14.17187,-14.17187l14.17188,-14.17187c1.562,-1.562 1.562,-4.09425 0,-5.65625c-1.56,-1.561 -4.09625,-1.562 -5.65625,0l-14.17187,14.17188l-14.17187,-14.17187c-0.78,-0.78 -1.80513,-1.17187 -2.82812,-1.17187z">
+                    </path>
+                    </g>
+                </svg>
             </div>
-        </nav>
+
+            <!-- Mobilní navigace s položkami menu -->
+            <nav class="mobilenav">
+                <ul class="menu">
+                    <a href="https://prochazkap.soskolin.eu/projekt/index.html#about">
+                        <h5>O Nás</h5>
+                    </a>
+                    <a href="https://prochazkap.soskolin.eu/projekt/index.html#projects">
+                        <h5>Projekty</h5>
+                    </a>
+                    <a href="https://prochazkap.soskolin.eu/projekt/index.html#gallery">
+                        <h5>Galerie</h5>
+                    </a>
+                    <a href="https://prochazkap.soskolin.eu/projekt/index.html#career">
+                        <h5>Kariéra</h5>
+                    </a>
+                    <a href="https://prochazkap.soskolin.eu/projekt/dotaznik.html">
+                        <h5>Dotazník</h5>
+                    </a>
+                    <a href="#contact">
+                        <h5>Kontakt</h5>
+                    </a>
+                </ul>
+            </nav>
+        </header>
         <div class="herotext">
             <h1>Petr Procházka</h1>
             <p>CEO a hlavní architekt</p>
@@ -70,6 +114,7 @@
         <div class="map"><iframe style="border:none" src="https://frame.mapy.cz/s/pocomesuza" width="100%" height="100%"
                 frameborder="0"></iframe></div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

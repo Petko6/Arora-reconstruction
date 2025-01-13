@@ -1,29 +1,41 @@
+:root {
+  /* colors */
+  --text: #f7f9fd;
+  --background: #000000;
+  --primary: #b99653;
+  --accent: #faf3e3;
+}
+
 form {
   max-width: 90%;
   margin: 0 auto;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
 }
+form h5 {
+  color: var(--primary);
+}
+
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 .form-group label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   font-weight: bold;
 }
 .form-group input[type="text"],
 .form-group textarea {
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 .form-group input[type="radio"],
 .form-group input[type="checkbox"] {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .form-group textarea {
   resize: vertical;
@@ -31,4 +43,8 @@ form {
 
 input[type="submit"] {
   place-self: start !important;
+}
+
+h1 {
+  text-align: center;
 }

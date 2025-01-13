@@ -9,7 +9,6 @@
   --accent: #faf3e3;
 
   /* Font sizes */
-
   /* --size1: bold 4.21rem;
   --size2: bold 3.158rem;
   --size3: bold 2.369rem;
@@ -37,26 +36,27 @@ html {
 } /* 16px */
 
 h1 {
-  font-size: 12rem; /* 177.44px */
+  font-size: 12rem; /* 192px */
 }
 
 h2 {
-  font-size: 6rem; /* 109.6px */
+  font-size: 6rem; /* 96px */
 }
 
 h3 {
-  font-size: 4rem; /* 67.84px */
+  font-size: 4rem; /* 64px */
 }
 
 h4 {
-  font-size: 2.5rem; /* 41.92px */
+  font-size: 2.5rem; /* 40px */
 }
 
 /* Reset default margin for text elements */
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
 }
 
@@ -86,7 +86,7 @@ body {
 a {
   text-decoration: underline;
   color: var(--text);
-  font-size: 2rem;
+  font-size: 2rem; /* 32px */
 }
 
 a:hover {
@@ -94,7 +94,7 @@ a:hover {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 2rem; /* 32px */
 }
 
 img {
@@ -105,8 +105,8 @@ img {
 /* Sekce */
 .section {
   display: flex;
-  padding: 6rem;
-  gap: 4rem;
+  padding: 6rem; /* 96px */
+  gap: 4rem; /* 64px */
   align-self: stretch;
   flex-direction: column;
 }
@@ -123,7 +123,7 @@ h4 {
 /* Navigation bar */
 .desktop {
   display: flex;
-  padding: 2rem 6rem;
+  padding: 2rem 6rem; /* 32px 96px */
   justify-content: space-between;
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
@@ -142,7 +142,7 @@ h4 {
   background: black;
   color: white;
   list-style: none;
-  padding-top: 4rem;
+  padding-top: 4rem; /* 64px */
   background-color: var(--background);
 }
 
@@ -172,8 +172,8 @@ h4 {
 }
 
 .logo {
-  width: 11rem;
-  height: 4rem;
+  width: 11rem; /* 176px */
+  height: 4rem; /* 64px */
   background: url("./img/logo.png") center/cover no-repeat;
   flex-shrink: 0;
 }
@@ -181,7 +181,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 3rem; /* 48px */
 }
 
 .menulinks a {
@@ -209,13 +209,13 @@ h4 {
 .about {
   display: flex;
   background: var(--background, #000);
-  gap: 6rem;
+  gap: 6rem; /* 96px */
   flex-direction: column;
   flex: 1 0 0;
 }
 
 .about h2 {
-  line-height: 7rem;
+  line-height: 7rem; /* 112px */
 }
 
 .about div {
@@ -223,7 +223,7 @@ h4 {
 }
 
 .abouttext {
-  font-size: 2rem;
+  font-size: 2rem; /* 32px */
   flex: 1 0 0;
 }
 
@@ -231,7 +231,7 @@ h4 {
 .minigallery {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 2rem; /* 32px */
   flex: 1 0 0;
   justify-items: end;
 }
@@ -243,7 +243,7 @@ h4 {
 }
 
 .minigallery img {
-  border-radius: 48px;
+  border-radius: 48px; /* 768px */
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -259,42 +259,42 @@ h4 {
 .team {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 4rem; /* 64px */
   align-self: stretch;
 }
 
 .team img {
   max-width: 100%;
   height: auto;
-  border-radius: 48px;
+  border-radius: 48px; /* 768px */
 }
 
 .team a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 16px; /* 256px */
   flex: 1 0 0;
   text-decoration: none;
 }
 
 /* Projects */
 .upcoming {
-  margin: 10rem;
+  margin: 10rem; /* 160px */
 }
 
 .futurum {
   display: flex;
-  border-radius: 48px;
+  border-radius: 48px; /* 768px */
   background: rgba(250, 243, 227, 0.1);
   justify-content: center;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 2rem; /* 32px */
   flex: 1 0 0;
 }
 
 .futurum a {
-  font-size: 2rem;
+  font-size: 2rem; /* 32px */
 }
 
 .futurum h4 {
@@ -305,13 +305,13 @@ h4 {
   display: flex;
   flex-direction: column;
   flex: 1 0 0;
-  padding: 2rem;
-  gap: 0.5rem;
+  padding: 2rem; /* 32px */
+  gap: 0.5rem; /* 8px */
 }
 
 .futurum img {
   display: flex;
-  border-radius: 48px;
+  border-radius: 48px; /* 768px */
   flex: 1 0 0;
   max-width: 100%;
   width: 50%;
@@ -327,7 +327,7 @@ h4 {
 }
 
 .gallery img {
-  border-radius: 48px;
+  border-radius: 48px; /* 768px */
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -337,41 +337,41 @@ h4 {
 /* Career */
 .career {
   display: flex;
-  padding: 48px;
-  border-radius: 48px;
+  padding: 48px; /* 768px */
+  border-radius: 48px; /* 768px */
   background: rgba(250, 243, 227, 0.1);
   justify-content: center;
-  gap: 2rem;
+  gap: 2rem; /* 32px */
 }
 
 .career div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1rem; /* 16px */
 }
 
 .career p {
-  font-size: 40px;
+  font-size: 40px; /* 640px */
   flex: 1 0 0;
 }
 
 .career img {
   max-width: 100%;
-  width: 300px;
+  width: 300px; /* 480px */
 }
 
 /* Footer */
 footer {
-  padding: 96px;
+  padding: 96px; /* 1536px */
   display: flex;
-  gap: 6rem;
+  gap: 6rem; /* 96px */
 }
 
 .contact {
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr;
-  gap: 1rem;
+  gap: 1rem; /* 16px */
   flex: 1 0 0;
 }
 
@@ -390,11 +390,11 @@ input[type="email"],
 input[type="tel"],
 textarea,
 input[type="submit"] {
-  border-radius: 16px;
+  border-radius: 16px; /* 256px */
   background: rgba(185, 150, 83, 0.15);
   color: rgba(247, 249, 253, 0.5);
   border: none;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem; /* 24px 32px */
 }
 
 input[type="submit"] {
@@ -419,7 +419,7 @@ textarea:focus {
 
   p,
   a {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem !important; /* 24px */
   }
 
   .map {
@@ -435,7 +435,7 @@ textarea:focus {
     flex-direction: column;
   }
   h1 {
-    font-size: 8rem;
+    font-size: 8rem; /* 128px */
   }
 }
 
@@ -452,36 +452,36 @@ textarea:focus {
     flex-direction: column;
   }
   .upcoming {
-    margin: 4rem;
+    margin: 4rem; /* 64px */
   }
 
   p,
   a {
-    font-size: 1rem !important;
+    font-size: 1rem !important; /* 16px */
   }
 }
 
 @media screen and (max-width: 900px) {
-  .hamburger{
+  .hamburger {
     display: unset;
   }
   .minigallery img,
   .gallery img {
-    border-radius: 2rem;
+    border-radius: 2rem; /* 32px */
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 6rem; /* 96px */
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 4rem; /* 64px */
   }
   .section {
-    padding: 3rem;
-    gap: 3rem;
+    padding: 3rem; /* 48px */
+    gap: 3rem; /* 48px */
   }
-  .desktopmenu{
+  .desktopmenu {
     display: none;
   }
 }
@@ -493,37 +493,37 @@ textarea:focus {
   }
 
   .contact textarea {
-    height: 150px;
+    height: 150px; /* 240px */
   }
 
   footer {
-    padding: 1.5rem;
+    padding: 1.5rem; /* 24px */
     display: flex;
-    gap: 2rem;
+    gap: 2rem; /* 32px */
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 4rem; /* 64px */
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 3rem; /* 48px */
   }
 
   .section {
-    padding: 2rem;
-    gap: 2rem;
+    padding: 2rem; /* 32px */
+    gap: 2rem; /* 32px */
   }
 
   .about {
-    gap: 2rem;
+    gap: 2rem; /* 32px */
   }
 }
 
 @media screen and (max-width: 400px) {
   .section {
-    padding: 1.5rem;
-    gap: 2rem;
+    padding: 1.5rem; /* 24px */
+    gap: 2rem; /* 32px */
   }
 
   .team {
@@ -531,20 +531,20 @@ textarea:focus {
   }
 
   .upcoming {
-    margin: 1rem;
-    font-size: 2rem;
+    margin: 1rem; /* 16px */
+    font-size: 2rem; /* 32px */
   }
 
   .minigallery,
   .gallery {
-    gap: 1rem;
+    gap: 1rem; /* 16px */
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 3rem; /* 48px */
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* 32px */
   }
 }

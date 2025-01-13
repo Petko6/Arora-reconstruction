@@ -60,7 +60,8 @@ h5 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
 }
 
@@ -109,6 +110,48 @@ header {
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
 }
+/* Mobile Nav */
+.mobilenav {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+  background-color: var(--background);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  font: var(--size3);
+  font-weight: 400;
+}
+
+.hamburger:hover {
+  color: var(--primary);
+}
+
+.hamburger {
+  cursor: pointer;
+  z-index: 101;
+  display: none;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
 .logo {
   width: 11rem;
   height: 4rem;
@@ -143,9 +186,9 @@ header {
 }
 
 .hero img {
-  width: 512px;
-  height: 512px;
-  border-radius: 48px;
+  width: 32rem;
+  height: 32rem;
+  border-radius: 3rem;
 }
 
 /* Bio */
@@ -158,7 +201,7 @@ header {
 
 /* Footer */
 footer {
-  padding: 96px;
+  padding: 6rem;
   display: flex;
   gap: 6rem;
 }
@@ -185,7 +228,7 @@ input[type="email"],
 input[type="tel"],
 textarea,
 input[type="submit"] {
-  border-radius: 16px;
+  border-radius: 1rem;
   background: rgba(185, 150, 83, 0.15);
   color: rgba(247, 249, 253, 0.5);
   border: none;
@@ -233,16 +276,32 @@ textarea:focus {
   h2 {
     font-size: 2rem;
   }
+
+  h5 {
+    font-size: 1rem;
+  }
+  .desktopmenu {
+    display: none;
+  }
+  .hamburger {
+    display: unset;
+  }
+  .herotext {
+    padding: 0 2rem 2rem 2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  h2 {
+    font-size: 1.5rem;
+  }
   .contact {
     display: flex;
     flex-direction: column;
   }
 
   .contact textarea {
-    height: 150px;
+    height: 9.375rem;
   }
 
   input[type="submit"] {

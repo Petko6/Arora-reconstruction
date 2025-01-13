@@ -37,19 +37,23 @@ html {
 } /* 16px */
 
 h1 {
-  font-size: 4rem; /* 177.44px */
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 3rem; /* 109.6px */
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 4rem; /* 67.84px */
+  font-size: 4rem;
 }
 
 h4 {
-  font-size: 2.5rem; /* 41.92px */
+  font-size: 3.5rem;
+}
+
+h5 {
+  font-size: 2rem;
 }
 
 /* Reset default margin for text elements */
@@ -77,6 +81,7 @@ body {
 
 body {
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 100dvh;
   width: 100%;
   scroll-behavior: smooth;
@@ -96,26 +101,8 @@ p {
   font-size: 2rem;
 }
 
-/* Sekce */
-.section {
-  display: flex;
-  padding: 6rem;
-  gap: 4rem;
-  align-self: stretch;
-  flex-direction: column;
-}
-
-.section h3,
-h4 {
-  text-align: center;
-}
-
-.row {
-  flex-direction: row;
-}
-
 /* Navigation bar */
-nav {
+header {
   display: flex;
   padding: 2rem 6rem;
   justify-content: space-between;
@@ -164,7 +151,7 @@ nav {
 /* Bio */
 
 .bio {
-    margin-top: 2rem;
+  margin-top: 2rem;
   display: flex;
   gap: 4rem;
 }
@@ -210,7 +197,7 @@ input[type="submit"] {
   place-self: end;
   background-color: var(--primary);
   color: var(--text);
-  width: 75%;
+  aspect-ratio: 5/1;
 }
 
 input:focus,
@@ -220,8 +207,46 @@ textarea:focus {
 
 /* Media queries */
 @media screen and (max-width: 1250px) {
-    .bio{
-        flex-direction: column;
-        align-items: center;
-    }
+  .bio {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  footer {
+    flex-direction: column;
+  }
+  p,
+  a,
+  label,
+  input {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact textarea {
+    height: 150px;
+  }
+
+  input[type="submit"] {
+    aspect-ratio: unset;
+    width: 100%;
+  }
 }

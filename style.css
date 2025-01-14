@@ -41,10 +41,12 @@ h1 {
 
 h2 {
   font-size: 6rem; /* 96px */
+  color: var(--primary);
 }
 
 h3 {
   font-size: 4rem; /* 64px */
+  color: var(--primary);
 }
 
 h4 {
@@ -295,10 +297,6 @@ h4 {
 
 .futurum a {
   font-size: 2rem; /* 32px */
-}
-
-.futurum h4 {
-  color: var(--primary);
 }
 
 .futurumdescription {

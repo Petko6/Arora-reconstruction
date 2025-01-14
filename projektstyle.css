@@ -38,10 +38,14 @@ html {
 
 h1 {
   font-size: 4rem;
+  color: var(--primary);
+  margin-top: 4rem !important;
 }
 
 h2 {
   font-size: 3rem;
+  color: var(--primary);
+  margin-top: 4rem !important;
 }
 
 h3 {

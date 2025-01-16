@@ -191,12 +191,9 @@ header {
   align-items: stretch;
 }
 
-/* Bio */
-
-.bio {
-  margin-top: 2rem;
-  display: flex;
-  gap: 4rem;
+/*Floor plan image*/
+.floor {
+  border-radius: 3rem;
 }
 
 /* Footer */

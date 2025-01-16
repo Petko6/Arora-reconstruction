@@ -194,6 +194,8 @@ header {
 /*Floor plan image*/
 .floor {
   border-radius: 3rem;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
 /* Footer */
